@@ -1,0 +1,485 @@
+<html lang="en">  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Arngren </title>
+  <script src="https://kit.fontawesome.com/b0811c54d0.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Train+One&family=Work+Sans:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Work Sans', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+	height: 25vh;
+	background: #fff;
+	position: fixed;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid #ccc;
+	border-top: 7px solid black;
+}
+
+.top-navbar {
+	margin-top: 15px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.top-navbar ul li{
+	display: inline-block;
+	list-style-type: none;
+	font-size: 14px;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.top-navbar .main-logo{
+    color: #4d84e2;
+    font-size: 28px;
+    font-weight: 800;
+	font-family: 'Train One', cursive;
+	margin-left: 313px;
+	margin-right: 310px;
+	cursor: pointer;
+}
+
+.top-navbar .sub-logo {
+	color: #000;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: none;
+	margin-left: 490px;
+} 
+
+.top-navbar span {
+    color: #ccc;
+	font-size: 30px;
+	font-weight: 400;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.top-navbar .fas {
+    font-size: 18px;
+    margin-left: -30px;	
+	margin-bottom: -5px;
+}
+
+.top-navbar a{
+    text-decoration: none;
+	color: #000;
+}
+
+.top-navbar a:hover {
+    color: blue;
+	text-decoration: underline;
+}
+
+.top-navbar .bottom-navbar {
+    border: 2px solid black;
+	margin-top: 20px;
+	padding-top: 10px;
+	height: 30px;
+	text-align: center;
+}
+
+.top-navbar .bottom-navbar .fas {
+    font-size: 18px;
+    margin-right: 5px;	
+	color: #4d84e2;
+}
+
+.top-navbar .bottom-navbar li{
+    display: inline-block;
+	list-style-type: none;
+}
+
+.top-navbar .bottom-navbar a {
+    text-decoration: none;
+	color: #000;
+	font-size: 14px;
+	font-weight: 800;
+	text-transform: uppercase;
+	transition: 0.05s;
+}
+
+.top-navbar .bottom-navbar a:hover {
+    color: blue;
+	text-decoration: underline;
+}
+
+.content {
+	padding-top: 100px;
+	padding-right: 6%;
+	padding-left: 6%;
+	height: auto;
+}
+
+.content .banner img {
+    width: 90%;
+	margin-top: 100px;
+	margin-left: 4%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid #ccc;
+}
+
+.content .welcome {
+	color: #000;
+	float: right;
+	width: 50%;
+	margin-top: -340px;
+	margin-right: 9%;
+	font-size: 14px;
+    font-weight: 700;
+}
+
+.content .welcome h3 {
+    color: #4d84e2;
+	font-size: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+	float: left;
+}
+
+.content .welcome p {
+    font-size: 15px;
+    text-indent: 30px;
+	text-align: justify;
+	line-height: 1.8;
+}
+
+.content .slider {
+	width: 31%;
+	margin-top: 50px;
+	overflow: hidden;
+	margin-left: 4%;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	border: 1px solid black;
+}
+
+.content .slider .images {
+    display: flex;
+	width: 100%;
+	text-align: center;
+}
+
+.content .slider .images img {
+    height: 350px;
+	width: 350px;
+	padding: 5px;
+	transition: all 0.15s ease;
+}
+
+.content .slider .images input {
+    display: none;
+}
+
+.content .slider .dots {
+    display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+
+.content .slider .dots label {
+    height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	border: 2px solid #000;
+	cursor: pointer;
+	transition: all 0.15s ease;
+	margin: -20px;
+}
+
+.content .slider .dots label:hover {
+    background-color: #000;
+}
+
+#img1:checked ~ .m1 {
+    margin-left: -0%;
+}
+
+#img2:checked ~ .m2 {
+    margin-left: -96%;
+}
+
+#img3:checked ~ .m3 {
+    margin-left: -195%;
+}
+
+#img4:checked ~ .m4 {
+    margin-left: -292%;
+}
+
+.cards {
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(302px, 302px));
+	gap: 40px;
+	justify-content: center;
+} 
+
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	border: 1px solid #ccc;
+}
+
+.card:hover {
+    box-shadow: 0 0 30px blue;
+}
+
+.card-image {
+    width: 300px;
+	height: 300px;
+	display: block;
+}
+
+.sub-footer {
+    margin-top: 40px; 
+    background: #f2f2f2;
+	width: 97%;
+	display: grid;
+	grid-template-columns: repeat(4, minmax(300px,300px));
+	gap: 5px;
+	justify-content: center;
+	padding-left: 3%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.sub-footer .promo .fas {
+	display: block;
+    font-size: 33px;
+    margin-right: 10px;
+    margin-top: 3px;	
+	color: #4d84e2;
+	float: left;
+}
+
+.promo p{
+    text-transform: uppercase;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.promo span {
+    font-size: 15px;
+}
+
+.footer {
+    background: #000;
+	color: #fff;
+	width: 97%;
+	height: 35%;
+	display: grid;
+	grid-template-columns: repeat(4, minmax(300px,300px));
+	gap: 5px;
+	justify-content: center;
+	padding-left: 3%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.footer .bottom-logo {
+    width: 55px;
+	height: auto;
+	border: 1px solid white;
+	border-radius: 50px;
+	
+}
+
+.footer .column {
+    border-right: 1px solid #ccc;
+	padding-left: 20px;
+}
+
+.footer .column .fas{
+    float: left;
+	padding-top: 5px;
+	padding-right: 10px;
+}
+
+.footer .column p{
+    padding-top: 2px;
+    font-size: 14px;
+	line-height: 1.5;
+}
+
+.footer .column h1 {
+    font-size: 17px;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.footer .column a {
+    text-decoration: none;
+	font-size: 20px;
+	color: #fff;
+	margin-right: 10px;
+}
+
+.footer .column a:hover {
+    color: #4d84e2;
+	text-decoration: underline;
+}
+
+</style>
+<body>
+	<div class="navbar">
+	    <div class="top-navbar">
+			<ul>
+		        <li> <i class="fas fa-search"></i>  <br>Search <span> | </span></li>
+			    <li> <i class="fas fa-language"></i> <br>Language <span> | </span></li>
+				<li class="main-logo"> A R N G R E N </li>	
+				<li><span> | </span></li>
+				<li class="right-nav"> <i class="fas fa-shopping-cart"></i><br>Cart <span> | </span></li>
+                <li class="right-nav"><i class="fas fa-user"></i> <br><a href="login.php">Sign in </a><span></li>
+				<br>
+				<li class="sub-logo"> Norwey's Ultimate Online Hobby Store </li>
+				<div class="bottom-navbar">
+				<li style="margin-right: 85px;"><i class="fas fa-home"></i><a href="index.php"> Home </a></li>
+				<li style="margin-right: 85px;"><i class="fas fa-bars"></i><a href="#"> Categories </a></li>
+			    <li style="margin-right: 85px;"><i class="fas fa-map"></i><a href="#"> About us </a></li>
+			    <li style="margin-right: 85px;"><i class="fas fa-phone"></i><a href="#"> Contact </a></li>
+			    <li><i class="fas fa-question-circle"></i><a href="#"> Help </a></li>
+				</div>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="content">
+	    <div class="banner">
+		   <img src="img/final-banner.png">
+		</div>
+		
+		<div class="slider">
+			   <div class="images">
+			      <input type ="radio" name="slide" id="img1">
+				  <input type ="radio" name="slide" id="img2">
+				  <input type ="radio" name="slide" id="img3">
+				  <input type ="radio" name="slide" id="img4">
+				
+			      <img src="img/7.jpg" class="m1" alt="img1">
+				  <img src="img/8.jpg" class="m2" alt="img2">
+				  <img src="img/9.jpg" class="m3" alt="img3">
+				  <img src="img/10.jpg" class="m4" alt="img4">
+			   </div>
+			<div class="dots">
+			    <label for="img1"></label>
+				<label for="img2"></label>
+				<label for="img3"></label>
+				<label for="img4"></label>
+			</div>
+		</div>
+		
+	    <div class="welcome">
+			<h3> Welcome to Arngren! </h3>
+			<br><br>
+			<p>   Arngren makes it easy for everyone to shop online and find everything they need in one convenient place. We are busy enhancing and updating the site on a daily basis to keep it fresh and interesting for every visitor that stops by. You will find a wide variety of models and many different skill levels to accommodate all builders. Visit the site often to see the many different items we offer. </p><br>
+			<p>Arngren also stocks a wide variety of toys, gadgets, electronics, and collectibles to satisfy every customer's needs. There are also many educational and historical items that are perfect for science and school projects. We have also expanded our product line to include puzzles, paint by number sets, science kits, and more.</p>
+		</div>	
+	</div>
+ 	
+	<div class ="cards">
+	    <div class ="card">
+			<a href="new_items.php"><img src="img/newitems.png" class="card-image"></a>
+        </div>
+		
+		<div class ="card">
+			<img src="img/appliances.png" class="card-image">
+        </div>
+		
+		<div class ="card">
+			<img src="img/collectibles.png" class="card-image">
+        </div>
+		
+		<div class ="card">
+			<img src="img/electronics.png" class="card-image">
+        </div>
+		
+		<div class ="card">
+			<img src="img/consoles.png" class="card-image">
+        </div>
+		
+		<div class ="card">
+			<img src="img/toycars.png" class="card-image">
+        </div>
+	</div>
+	
+	<div class="sub-footer">
+	    <div class ="promo">
+		    <i class="fas fa-gift"></i>
+			<p>Gift Cards</p>
+			<span> Give the perfect gift </span>
+        </div>
+		
+		<div class ="promo">
+			<i class="fas fa-shipping-fast"></i> 
+			<p>Free Shipping</p>
+			<span>on Europe Orders Over $100</span>
+        </div>
+		
+		<div class ="promo">
+			<i class="fas fa-clock"></i>
+			<p>Order Ship Same Day</p>
+			<span> If placed by 12PM EMT</span>
+        </div>
+		
+		<div class ="promo">
+			<i class="fas fa-globe-asia"></i> 
+			<p>Buy From Anywhere </p>
+			<span>We ship worldwide</span>
+        </div>
+	</div>	
+	
+	<div class="footer">
+	     <div class ="column">
+		    <img src="img/logo.gif" class="bottom-logo">
+			<br>
+			<br>
+			<i class="fas fa-map-marker-alt"></i><p>Norway</p>
+			<br>
+			<i class="fas fa-phone"></i> <p>123-456-7890</p>
+			<br>
+			<i class="fas fa-envelope"></i><p>fritjof@arngren.net</p>
+        </div>
+		
+		<div class ="column">
+		    <h1>  My Account </h1>
+			<a href="#"><p>  Sign In </p></a>
+		    <a href="#"><p>  Create an Account </p></a>
+			<a href="#"><p>  Forgot my Password </p></a>
+			<a href="#"><p>  Shipping & Returns </p></a>
+			<a href="#"><p>  Privacy Policy </p></a>
+			<a href="#"><p>  Track your Order </p></a>
+		</div>
+		
+		<div class ="column">
+		    <h1>  Quick Links </h1>
+			<a href="index.php"><p>  Home </p></a>
+		    <a href="#"><p>  Reviews </p></a>
+			<a href="#"><p>  About </p></a>
+			<a href="#"><p>  Contact</p></a>
+			<a href="#"><p>  Sitemap </p></a>
+		</div>
+		
+		<div class ="column" style="border-right: none;">
+		    <h1>  Follow Us </h1>
+			<a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-pinterest"></i></a>
+			<br><br><br><br><br><br>
+			<p style="class: font-style: italic;">&copy; Copyright 1995-2021 Arngren Inc. | <br> All Rights Reserved</p>
+		</div>
+	</div>
+	
+</html>

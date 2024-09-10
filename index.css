@@ -1,0 +1,266 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;	
+}
+
+.container {
+	width: 100%;
+	min-height: 100vh;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+	overflow: hidden; 
+}
+
+.navbar {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	height: 14%;
+}
+
+.main-logo {
+    width: 60px;
+	margin-right: 12px;
+	border: 1px solid black;
+	border-radius: 50px;
+	border-spacing: 10px;
+}
+
+.logo h3 {
+	color: #4d84e2;
+    font-size: 18px;
+    font-weight: 700;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.logo p {
+    color: #000;
+    font-size: 12px;
+	margin-top: 3px;
+}
+
+.p-log 
+{
+   font-size: 5px;
+}
+
+nav {
+	flex: 1;
+	text-align: left;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 30px;
+	margin-top: 11px;
+	margin-bottom: 11px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	font-size: 14px;
+	font-weight: 400;
+	transition: 0.05s;
+}
+
+nav ul li a:hover {
+	color: #4d84e2;
+	border-bottom: 1px solid #4d84e2;
+}
+
+.search {
+    float: right;
+	color: #000;
+	font-size: 14px;
+	font-weight: 400
+	
+}
+
+.search-bar {
+    background-color: #ccc;
+    float: right;
+	margin-left: 10px;
+	margin-top: -2px;
+    border: none;
+	border-radius: 50px;
+	font-size: 14px;
+	padding: 2px;
+}
+
+.wrapper {
+    display: flex;
+	position: relative;
+	float: right;
+}
+
+.wrapper .sidebar {
+    position: fixed;
+	width: 200px;
+	height: 100%;
+	padding: 30px 0;
+	margin-left: 35px;
+	border-left: 1px solid #ccc;
+}
+
+.wrapper .sidebar h3 {
+    text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+.wrapper .sidebar ul li {
+    padding: 5px;
+	list-style-type: none;
+}
+
+.wrapper .sidebar ul li a {
+    display: block;
+	text-decoration: none;
+	color: gray;
+	margin-left: 10px;
+	font-size: 14px;
+	font-weight: 500;
+	transition: 0.05s;
+	transition-property: color;
+}
+
+.wrapper .sidebar ul li a:hover {
+    color: #4d84e2;
+	border-bottom: 1px solid #4d84e2;
+}
+
+.wrapper .sidebar .social-media {
+    position: absolute;
+	border-top: 1px solid #ccc;
+	padding: 15px 0;
+}
+
+.wrapper .sidebar .social-media h3 {
+    text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	margin-left: 10px;
+	margin-bottom: 15px;
+}
+
+.wrapper .sidebar .social-icon{
+    display: inline-block;
+	font-size: 20px;
+	cursor: pointer;
+    text-decoration: none;
+	color: gray;
+	transition: 0.05s;
+	transition-property: color;
+	margin-left: 10px;
+}
+
+.wrapper .sidebar .social-icon:hover {
+    color: #4d84e2;
+}
+
+.content .slider-top h3 {
+	background-color: #000;
+	color: #fff;
+	width: 70%;
+	padding: 13px;
+	margin-left: 30px;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 14px;
+    font-weight: 700;
+	text-transform: uppercase;
+	opacity: 0.9;
+}
+
+.content .slider-top span {
+    color: red;
+	font-size: 15px;
+    font-weight: 700;
+}
+
+.content .slider {
+    position: relative;
+	width: 31%;
+	margin-top: 7px;
+	overflow: hidden;
+	left: 22%;
+}
+
+.content .slider .images {
+    display: flex;
+	width: 100%;
+	text-align: center;
+}
+
+.content .slider .images img {
+    height: 350px;
+	width: 350px;
+	transition: all 0.15s ease;
+}
+
+.content .slider .images input {
+    display: none;
+}
+
+.content .slider .dots {
+    display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+
+.content .slider .dots label {
+    height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	border: 2px solid #000;
+	cursor: pointer;
+	transition: all 0.15s ease;
+	margin: -20px;
+}
+
+.content .slider .dots label:hover {
+    background-color: #000;
+}
+
+#img1:checked ~ .m1 {
+    margin-left: -0%;
+}
+
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+
+#img4:checked ~ .m4 {
+    margin-left: -400%;
+}
+
+.slider-bottom h3{
+    background-color: #000;
+	color: #fff;
+	width: 71%;
+	padding: 10px;
+    margin-left: 30px;
+	margin-top: -5px;
+	float: left;
+	font-size: 12px;
+	text-transform: uppercase;
+	opacity: 0.9;
+}
+
+.slider-bottom span {
+    float: right;
+}

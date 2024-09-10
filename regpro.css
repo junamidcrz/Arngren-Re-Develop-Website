@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Train+One&family=Work+Sans:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Work Sans', sans-serif;
+	color: #383838;
+}
+
+.submit
+{ 
+  padding: 10px 50px; 
+  border: none;
+  color: white;
+  margin-left: 100px;
+  background-color: black;
+}
+
+.btn
+{
+	text-align: center;
+	padding-bottom: 5%;
+}
+
+.reg
+{
+	text-align: center;
+	padding-bottom: 20%;
+	font-size: 13.5px;
+}
+
+.tbl
+{
+	padding-left: 5%;
+	padding-top: 5%;
+}
+
+.tbl2
+{
+	margin-left: 330px;
+	margin-top: -411px;
+	padding-bottom: 90px;
+}
+
+.lbl
+{
+ 
+}
+
+.lbl2
+{
+	font-size: 25px;
+	padding-bottom: 5%;
+	padding-top: 5%;
+}
+
+#emailbox
+{
+	width:250px;
+	font-size: 15px;
+	border:none;
+	background:transparent;
+	border-bottom: solid 1px gray;
+	outline: 0;
+}
+
+.bn
+{
+	padding-bottom: 10px;
+	font-size: 15px;
+}
+.bnn
+{
+	padding-bottom: 30px;
+	font-size: 15px;
+}
+
+#passwordbox
+{
+	width:250px;
+	font-size: 15px;
+	border:none;
+	background:transparent;
+	border-bottom: solid 1px gray;
+	outline: 0;
+}
+
+#conpasswordbox
+{
+	width:250px;
+	font-size: 15px;
+	border:none;
+	background:transparent;
+	border-bottom: solid 1px gray;
+	outline: 0;
+}
+
+.bt
+{
+	padding-bottom: 20px;
+	font-size: 15px;
+}
+
+.col
+{
+	width:80%;
+	margin-top: 5%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #F0F0F0;
+	border-radius: 5px;
+	box-shadow: 0px 10px;
+	border: solid 1px;
+	border-color: grey;
+	opacity: 0.9;
+}
+
+
+.main-logo
+{
+    color: #4d84e2;
+    font-size: 25px;
+    font-weight: 800;
+	font-family: 'Train One', cursive;
+	cursor: pointer;
+	float: top;
+	margin-left: 3%;
+	padding-top: 1%;
+}
+
+.imglogo
+{
+	width: 70px;
+	height: 70px;
+}
+
+#mbn
+{
+	width:250px;
+	font-size: 15px;
+	border:none;
+	background:transparent;
+	border-bottom: solid 1px gray;
+	outline: 0;
+}
+
+#country
+{
+	width:250px;
+	font-size: 15px;
+	border:none;
+	background:beige;
+	border-bottom: solid 1px gray;
+	border-top: solid 1px gray;
+	border-left: solid 1px gray;
+	border-right: solid 1px gray;
+	outline: 0;
+}
+
+#cities
+{
+	width:250px;
+	font-size: 15px;
+	border:none;
+	background:beige;
+	border-bottom: solid 1px gray;
+	border-top: solid 1px gray;
+	border-left: solid 1px gray;
+	border-right: solid 1px gray;
+	outline: 0;
+}
+
+.lblclr
+{
+	color:black;
+	font-weight: bold;
+	font-family: Calibri;
+}
+
+.divtwo
+{
+	margin-left: 595px;
+	margin-top: -544px;
+	padding-bottom: 150px;
+	background-color:#E8E8E8;
+	text-align: center;
+	border-radius: 0px 5px 0px 0px;
+	width:43%;
+	height: 100%;
+	border-top: solid 1px grey;
+}
+
+.imgreg
+{
+	margin-top: 90px;
+}
+
+.label
+{
+	margin-top: 100px;
+}
+
+body
+{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/bg.jpg);
+}
+
